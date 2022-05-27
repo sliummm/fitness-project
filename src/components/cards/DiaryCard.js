@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {db} from '../../firebase';
 import {collection, getDocs, deleteDoc, doc, where, query, updateDoc} from 'firebase/firestore';
 import Button from '../Button';
@@ -13,8 +13,7 @@ const DiaryCard = (props) => {
             const data = await getDocs(q);
 
             const entires = data.docs.map((doc)=>({...doc.data(), id:doc.id}));
-            //console-out
-            console.log(entires);
+            
             entires.map(
                 (doc)=>{
                     setDiaries(diaries=>[...diaries, doc]);

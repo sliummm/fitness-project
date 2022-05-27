@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Menuitems } from '../utilities/Menuitem';
 import { Link } from 'react-router-dom';
 import { Dropdown as SubMenu, Menu } from 'semantic-ui-react';
@@ -54,7 +55,7 @@ const NavBar = () =>{
                                                             {sub.title}
                                                         </Link>
                                                     </SubMenu.Item>
-                                            )
+                                                )
                                         })}
                                     </SubMenu.Menu>
     
