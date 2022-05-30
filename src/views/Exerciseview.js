@@ -68,6 +68,8 @@ const Recordview = ()=>{
         setExercises(exercises.filter((res)=>res.exerciseId !== exercise.exerciseId))
     }
 
+    console.table(exercises);
+
     const onSubmitExercise= async ()=>{
 
         exercises.map((exercise)=>{

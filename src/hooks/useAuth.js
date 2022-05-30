@@ -23,17 +23,3 @@ export const useAuth = () => {
 
     return currentUser;
 }
-
-// useEffect(()=>{
-//     const authStatus = () =>{
-//         const unsub = onAuthStateChanged(auth, (user) => {
-//             if (user) {
-//                 setCurrentUser(user);
-//             }else{
-//                 setCurrentUser(null);
-//             }
-//         });
-//         return unsub;
-//     }
-//     return authStatus();
-// },[])
